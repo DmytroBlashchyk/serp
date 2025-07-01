@@ -1,0 +1,14 @@
+{{- if .Values.fapp.autoscaling.enabled }}
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: "{{ include "chart.fullname" . }}-fapp"
+spec:
+  scaleTargetRef:
+    apiVersion: fapps/v1beta1
+    kind: Deployment
+    name: "{{ include "chart.fullname" . }}-fapp"
+  minReplicas: {{ toYaml .Values.fapp.autoscaling.minReplicas }}
+  maxReplicas: {{ toYaml .Values.fapp.autoscaling.maxReplicas }}
+  targetCPUUtilizationPercentage: {{ toYaml .Values.fapp.autoscaling.targetCPUUtilizationPercentage }}
+{{- end }}

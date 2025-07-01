@@ -1,0 +1,57 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "{{ include "chart.fullname" . }}-fapp"
+  labels:
+{{ toYaml .Values.fapp.labels | indent 4 }}
+spec:
+  replicas: {{ .Values.fapp.autoscaling.desiredReplicaCount }}
+  strategy:
+{{ toYaml .Values.fapp.updateStrategy | indent 4 }}
+  selector:
+    matchLabels:
+{{ toYaml .Values.fapp.labels | indent 6 }}
+  template:
+    metadata:
+      annotations:
+{{ toYaml .Values.fapp.podAnnotations | indent 8 }}
+      labels:
+{{ toYaml .Values.fapp.labels | indent 8 }}
+    spec:
+      topologySpreadConstraints:
+      - maxSkew: 1
+        topologyKey: topology.kubernetes.io/zone
+        whenUnsatisfiable: ScheduleAnyway
+        labelSelector:
+          matchLabels:
+{{ toYaml .Values.fapp.labels | indent 12 }}
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.fapp.image.repository }}:{{ .Values.fapp.image.tag }}"
+          imagePullPolicy: {{ .Values.fapp.image.pullPolicy }}
+          env:
+{{- if .Values.fapp.env }}
+{{ toYaml .Values.fapp.env | indent 12 }}
+{{- end }}
+          ports:
+            - name: fapp
+              containerPort: {{ .Values.fapp.container.port }}
+              protocol: {{ .Values.fapp.container.protocol }}
+          readinessProbe:
+{{ toYaml .Values.fapp.readinessProbe | indent 12 }}
+          livenessProbe:
+{{ toYaml .Values.fapp.livenessProbe | indent 12 }}
+          resources:
+            {{- toYaml .Values.fapp.resources | nindent 12 }}
+      {{- with .Values.fapp.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+    {{- with .Values.fapp.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+    {{- with .Values.fapp.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}

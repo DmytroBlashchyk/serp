@@ -1,0 +1,46 @@
+name: Serpnest staging CI/CD process
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  # Run tests
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'  # Node.js version
+
+      - name: Install dependencies
+        run: |
+          npm install --force
+
+      - name: Run tests
+        run: |
+          NODE_OPTIONS="--max-old-space-size=4096" npm run test
+
+  # Deploy to EC2
+  deploy:
+    runs-on: ubuntu-latest
+    needs: run-tests
+    env:
+      SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      EC2_USER: ${{ secrets.EC2_USER }}
+      EC2_HOST: ${{ secrets.EC2_HOST }}
+    steps:
+      - name: Deploy to EC
+        run: | 
+          echo "$SSH_PRIVATE_KEY" > ssh_key
+          chmod 600 ssh_key
+          
+          ssh -i ssh_key -o StrictHostKeyChecking=no "$EC2_USER@$EC2_HOST" '
+          cd serpnest-backend
+          ./deploy.dev.sh
+          '

@@ -1,0 +1,33 @@
+FROM node:16 as base
+
+WORKDIR /home/node/app
+
+COPY package*.json ./
+RUN npm cache clean --force
+RUN rm -rf node_modules
+
+
+RUN npm cache clean --force
+RUN rm -rf node_modules
+RUN npm install --force
+
+COPY . .
+
+
+FROM base as production
+
+
+
+FROM base as unit-tests
+
+ENV GIT_WORK_TREE=/home/node/app GIT_DIR=/home/node/.git
+
+RUN npm run build:queue
+EXPOSE 9000
+CMD ["npm", "run", "queue:dev"]
+
+
+
+RUN apt-get update && \
+    apt-get install git
+

@@ -1,0 +1,48 @@
+import { IdType } from 'modules/common/types/id-type.type';
+import { DeviceTypesEnum } from 'modules/device-types/enums/device-types.enum';
+
+export interface GetKeywordsWithKeywordPositionsType {
+  id: IdType;
+  account_id?: IdType;
+  name: string;
+  updated_at: Date;
+  cpc: number;
+  position_update: boolean;
+  search_volume: number;
+  device_type_id: IdType;
+  device_type_name: DeviceTypesEnum;
+  position: number;
+  date: Date;
+  position_green_check_mark: boolean;
+  position_trophy: boolean;
+  url: string;
+  day1_position?: number;
+  day1_date?: Date;
+  day7_position?: number;
+  day7_date?: Date;
+  day30_position: number;
+  day30_date: Date;
+  first_position: number;
+  first_date: Date;
+  best_position: number;
+  life_difference: number;
+  life_dash: boolean;
+  life_is_improved: boolean;
+  life_is_declined: boolean;
+  day1_difference: number;
+  day1_dash: boolean;
+  day1_is_improved: boolean;
+  day1_is_declined: boolean;
+  day7_difference: number;
+  day7_result_dash: boolean;
+  day7_is_improved: boolean;
+  day7_is_declined: boolean;
+  day30_difference: number;
+  day30_result_dash: boolean;
+  day30_is_improved: boolean;
+  day30_is_declined: boolean;
+  update_allowed: boolean;
+  first_position_dash: boolean;
+  position_dash: boolean;
+  project_domain: string;
+}

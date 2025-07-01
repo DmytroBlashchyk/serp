@@ -1,0 +1,14 @@
+{{- if .Values.queue.autoscaling.enabled }}
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: "{{ include "chart.fullname" . }}-queue"
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1beta1
+    kind: Deployment
+    name: "{{ include "chart.fullname" . }}-queue"
+  minReplicas: {{ toYaml .Values.queue.autoscaling.minReplicas }}
+  maxReplicas: {{ toYaml .Values.queue.autoscaling.maxReplicas }}
+  targetCPUUtilizationPercentage: {{ toYaml .Values.queue.autoscaling.targetCPUUtilizationPercentage }}
+{{- end }}

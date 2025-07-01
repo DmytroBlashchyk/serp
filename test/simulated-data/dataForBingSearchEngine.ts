@@ -1,0 +1,1343 @@
+export const dataForBingSearchEngine = {
+  id: '09211702-7049-0121-0000-ad1bfb1cfa17',
+  status_code: 20000,
+  status_message: 'Ok.',
+  time: '12.0535 sec.',
+  cost: 0.002,
+  result_count: 1,
+  path: ['v3', 'serp', 'bing', 'organic', 'live', 'regular'],
+  data: {
+    api: 'serp',
+    function: 'live',
+    se: 'bing',
+    se_type: 'organic',
+    keyword: 'iphone',
+    location_code: 2826,
+    language_code: 'en',
+    device: 'desktop',
+    os: 'windows',
+    depth: 100,
+  },
+  result: [
+    {
+      keyword: 'iphone',
+      type: 'organic',
+      se_domain: 'bing.com',
+      location_code: 2826,
+      language_code: 'en',
+      check_url:
+        'https://www.bing.com/search?q=iphone&count=50&first=1&setmkt=en-GB&setlang=en-gb&safesearch=Moderate&form=QBLH',
+      datetime: '2024-09-21 14:02:35 +00:00',
+      spell: null,
+      item_types: [
+        'top_stories',
+        'organic',
+        'video',
+        'related_searches',
+        'paid',
+        'shopping',
+      ],
+      se_results_count: 3584,
+      items_count: 114,
+      items: [
+        {
+          type: 'organic',
+          rank_group: 1,
+          rank_absolute: 2,
+          domain: 'www.apple.com',
+          title: 'Buy iPhone - Apple (UK)',
+          description:
+            'Shop the latest iPhone models and accessories. Pay monthly at 0% APR with the flexibility to upgrade to a new iPhone when you want.',
+          url: 'https://www.apple.com/uk/shop/buy-iphone',
+          breadcrumb: 'https://www.apple.com/uk/shop/buy-iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 2,
+          rank_absolute: 3,
+          domain: 'www.apple.com',
+          title: 'iPhone - Apple',
+          description:
+            'Designed for Apple Intelligence. Discover the new iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16, and iPhone 16 Plus.',
+          url: 'https://www.apple.com/iphone/',
+          breadcrumb: 'https://www.apple.com/iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 3,
+          rank_absolute: 5,
+          domain: 'www.argos.co.uk',
+          title: 'Apple iPhone - Argos',
+          description:
+            'Eligible devices include any new iPhone, iPad, Apple TV or Mac capable of using the latest iOS, iPadOS, tvOS or macOS. Apple iPhone at Argos. Shop and compare all the very …',
+          url: 'https://www.argos.co.uk/brands/apple-iphone',
+          breadcrumb: 'https://www.argos.co.uk/brands/apple-iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 4,
+          rank_absolute: 6,
+          domain: 'en.wikipedia.org',
+          title: 'iPhone - Wikipedia',
+          description:
+            "The iPhone is a smartphone produced by Apple that uses Apple's own iOS mobile operating system. The first-generation iPhone was announced by then–Apple CEO Steve Jobs on January 9, 2007. Since then, Apple has annually released new iPhone models and iOS updates. As of November 1, 2018, more than 2.2 billion iPhones had been sold.",
+          url: 'https://en.wikipedia.org/wiki/IPhone',
+          breadcrumb: 'https://en.wikipedia.org/wiki/IPhone',
+        },
+        {
+          type: 'organic',
+          rank_group: 5,
+          rank_absolute: 7,
+          domain: 'support.apple.com',
+          title: 'About iOS 18 Updates - Apple Support',
+          description:
+            '5 days ago · About iOS 18 Updates. iOS 18 brings new ways to customize the iPhone experience, relive special moments, and stay connected. Customize your iPhone further …',
+          url: 'https://support.apple.com/en-us/121161',
+          breadcrumb: 'https://support.apple.com/en-us/121161',
+        },
+        {
+          type: 'organic',
+          rank_group: 6,
+          rank_absolute: 8,
+          domain: 'www.johnlewis.com',
+          title: 'Apple iPhones - John Lewis & Partners',
+          description:
+            'iPhones. Explore our range of iPhones to find the ideal handset for your needs. Apple’s latest release is the iPhone 15, which is available in several models, including the …',
+          url: 'https://www.johnlewis.com/browse/electricals/mobile-phones-accessories/view-all-mobile-phones/apple/_/N-a8vZ1z13zz4',
+          breadcrumb:
+            'https://www.johnlewis.com/browse/electricals/mobile-phones-acces…',
+        },
+        {
+          type: 'organic',
+          rank_group: 7,
+          rank_absolute: 9,
+          domain: 'support.apple.com',
+          title: 'iPhone - Official Apple Support',
+          description:
+            'Learn how to set up and use your iPhone. Find all the topics, resources, and contact options you need for iPhone.',
+          url: 'https://support.apple.com/iphone',
+          breadcrumb: 'https://support.apple.com/iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 8,
+          rank_absolute: 10,
+          domain: 'en.wikipedia.org',
+          title: 'List of iPhone models - Wikipedia',
+          description:
+            'The iPhone, developed by Apple Inc., is a line of smartphones that combine a mobile phone, digital camera, personal computer, and music player into one device. Introduced by then-CEO Steve Jobs on January 9, 2007, …',
+          url: 'https://en.wikipedia.org/wiki/List_of_iPhone_models',
+          breadcrumb: 'https://en.wikipedia.org/wiki/List_of_iP…',
+        },
+        {
+          type: 'organic',
+          rank_group: 9,
+          rank_absolute: 11,
+          domain: 'www.currys.co.uk',
+          title: 'Buy APPLE iPhone 12 - 64 GB, Black - Currys',
+          description:
+            "Apple iPhone 12 is packed with smart and powerful features. The A14 Bionic chip and its 16-core Neural Engine are running the show and they don't get slowed down by any app or game. From Apple TV to emails, …",
+          url: 'https://www.currys.co.uk/products/apple-iphone-12-64-gb-black-10215596.html',
+          breadcrumb: 'https://www.currys.co.uk/products/appl…',
+        },
+        {
+          type: 'organic',
+          rank_group: 10,
+          rank_absolute: 12,
+          domain: 'www.apple.com',
+          title: 'iPhone - Buying iPhone - Apple (UK)',
+          description:
+            'iPhone 14, iPhone 14 Pro, iPhone 15, iPhone 15 Pro, iPhone 16 and iPhone 16 Pro can detect a serious car crash and call for help. Requires a mobile data connection or Wi‑Fi …',
+          url: 'https://www.apple.com/uk/iphone/buy/',
+          breadcrumb: 'https://www.apple.com/uk/iphone/buy',
+        },
+        {
+          type: 'organic',
+          rank_group: 11,
+          rank_absolute: 13,
+          domain: 'www.currys.co.uk',
+          title:
+            'APPLE iPhone SIM Free - Latest iPhone Models & Deals - Currys',
+          description:
+            'Land yourself a fantastic deal on APPLE products in the Mobile phones range here at Currys. Available online for delivery or order & collect.',
+          url: 'https://www.currys.co.uk/phones/mobile-phones/mobile-phones/apple',
+          breadcrumb:
+            'https://www.currys.co.uk/phones/mobile-phones/mobile-phones/apple',
+        },
+        {
+          type: 'organic',
+          rank_group: 12,
+          rank_absolute: 14,
+          domain: 'support.apple.com',
+          title: 'iPhone – Official Apple Support',
+          description:
+            'Get personalised access to solutions for your Apple products. Download the Apple Support app. Find out how to set up and use your iPhone. Find all the topics, resources and …',
+          url: 'https://support.apple.com/en-gb/iphone',
+          breadcrumb: 'https://support.apple.com/en-gb/iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 13,
+          rank_absolute: 15,
+          domain: 'www.very.co.uk',
+          title: 'Apple iPhones | New SIM Free iPhone Deals | Very',
+          description:
+            'Find a New iPhone at Very. Ready to upgrade your iPhone? Here at Very, we stock a selection of models and accessories, so you can find the right one for you. Browse our …',
+          url: 'https://www.very.co.uk/browse/technology-mobile-phones/brand--apple',
+          breadcrumb:
+            'https://www.very.co.uk/browse/technology-mobile-phones/brand--a…',
+        },
+        {
+          type: 'organic',
+          rank_group: 14,
+          rank_absolute: 16,
+          domain: 'www.techradar.com',
+          title: 'The best cheap iPhone is about to disappear - TechRadar',
+          description:
+            '5 hours ago · Despite now being three generations old, the iPhone 13 is still a very capable smartphone, and a good entry point into the walled garden of iOS and the Apple …',
+          url: 'https://www.techradar.com/phones/iphone/the-best-cheap-iphone-is-about-to-disappear-buy-one-while-you-still-can',
+          breadcrumb:
+            'https://www.techradar.com/phones/iphone/the-best-cheap-iphone-i…',
+        },
+        {
+          type: 'organic',
+          rank_group: 15,
+          rank_absolute: 17,
+          domain: 'www.apple.com',
+          title: 'iPhone - Compare Models - Apple (UK)',
+          description:
+            'Compare features and technical specifications for iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16, iPhone 16 Plus, iPhone SE and many more.',
+          url: 'https://www.apple.com/uk/iphone/compare/',
+          breadcrumb: 'https://www.apple.com/uk/iphone/compare',
+        },
+        {
+          type: 'organic',
+          rank_group: 16,
+          rank_absolute: 18,
+          domain: 'www.cnet.com',
+          title: 'iOS 18 Review: New Customizations Made My iPhone Feel …',
+          description:
+            '3 hours ago · These changes made my iPhone feel more tailored to my needs, more useful and capable than before and made communicating with others easier and more …',
+          url: 'https://www.cnet.com/tech/services-and-software/ios-18-review-new-customization-made-my-iphone-feel-tailored-to-me/',
+          breadcrumb:
+            'https://www.cnet.com/tech/services-and-software/ios-18-review-new...',
+        },
+        {
+          type: 'organic',
+          rank_group: 17,
+          rank_absolute: 19,
+          domain: 'www.forbes.com',
+          title:
+            'Apple iPhone 16 Pro Reveals Design Change Confirming Popular …',
+          description:
+            '3 hours ago · The video declares the battery capacity is 3,582mAh, a significant increase over the iPhone 15 Pro. That phone’s battery measured 3,274mAh, which means the …',
+          url: 'https://www.forbes.com/sites/davidphelan/2024/09/21/apple-iphone-16-pro-reveals-design-change-confirming-popular-upgrade/',
+          breadcrumb:
+            'https://www.forbes.com/sites/davidphelan/2024/09/21/apple-iphon…',
+        },
+        {
+          type: 'organic',
+          rank_group: 18,
+          rank_absolute: 20,
+          domain: 'support.apple.com',
+          title: 'Use the Camera Control on iPhone 16 models - Apple Support',
+          description:
+            '4 days ago · Select and adjust the Camera Control settings. Click the Camera Control to open Camera . Lightly press the Camera Control twice to open an overlay that shows …',
+          url: 'https://support.apple.com/en-gb/guide/iphone/iph0c397b154/ios',
+          breadcrumb:
+            'https://support.apple.com/en-gb/guide/iphone/iph0c397b154/ios',
+        },
+        {
+          type: 'organic',
+          rank_group: 19,
+          rank_absolute: 21,
+          domain: 'edition.cnn.com',
+          title:
+            'Why you should (or shouldn’t) upgrade to the iPhone 16 | CNN …',
+          description:
+            '1 day ago · The regular iPhone 16 captured blurry and illegible shots, while the 16 Pro’s photos were practically crisp. iPhone 15 Pro owners who want that 5x zoom have good …',
+          url: 'https://edition.cnn.com/cnn-underscored/electronics/should-you-upgrade-to-iphone-16',
+          breadcrumb:
+            'https://edition.cnn.com/.../electronics/should-you-upgrade-to-iphon…',
+        },
+        {
+          type: 'organic',
+          rank_group: 20,
+          rank_absolute: 22,
+          domain: 'www.apple.com',
+          title: 'Buy iPhone 16 and iPhone 16 Plus - Apple (UK)',
+          description:
+            'Get £30–£645 off a new iPhone 16 or iPhone 16 Plus when you trade in an iPhone 8 or newer. 0% financing available. Buy now with free shipping.',
+          url: 'https://www.apple.com/uk/shop/buy-iphone/iphone-16',
+          breadcrumb: 'https://www.apple.com/uk/shop/buy-iphone/iphone-16',
+        },
+        {
+          type: 'organic',
+          rank_group: 21,
+          rank_absolute: 23,
+          domain: 'support.apple.com',
+          title: 'About Messages via satellite on your iPhone - Apple Support',
+          description:
+            '5 days ago · In Control Center: Swipe down from the top right corner of your iPhone to open Control Center, then tap the Cellular button on the right. Tap Satellite, then choose …',
+          url: 'https://support.apple.com/en-us/120930',
+          breadcrumb: 'https://support.apple.com/en-us/120930',
+        },
+        {
+          type: 'organic',
+          rank_group: 22,
+          rank_absolute: 24,
+          domain: 'www.youtube.com',
+          title:
+            'iPhone 16 Review: A More Fun Camera, But Not Perfect - YouTube',
+          description:
+            '3 days ago · The iPhone 16’s new camera control button and Photographic Styles give photographers something to be excited about. But without Apple Intelligence, it’s hard...',
+          url: 'https://www.youtube.com/watch?v=XAGuR34NmUU',
+          breadcrumb: 'https://www.youtube.com/watch?v=XAGuR34NmUU',
+        },
+        {
+          type: 'organic',
+          rank_group: 23,
+          rank_absolute: 25,
+          domain: 'www.apple.com',
+          title: 'Apple Store Online - Apple (UK)',
+          description:
+            'Get ready for iPhone 16 and iPhone 16 Pro pre‑order now. Then speed through checkout on 13.09.',
+          url: 'https://www.apple.com/uk/store',
+          breadcrumb: 'https://www.apple.com/uk/store',
+        },
+        {
+          type: 'organic',
+          rank_group: 24,
+          rank_absolute: 26,
+          domain: 'uk.yahoo.com',
+          title:
+            'People horrified after learning what orange dot means on their …',
+          description:
+            "1 day ago · The orange dot appears when you're using the microphone -Credit:Apple. According to Apple, the colours are there to alert you whenever your microphone or …",
+          url: 'https://uk.yahoo.com/news/people-horrified-learning-orange-dot-124311668.html',
+          breadcrumb:
+            'https://uk.yahoo.com/news/people-horrified-learning-orange-dot...',
+        },
+        {
+          type: 'organic',
+          rank_group: 25,
+          rank_absolute: 27,
+          domain: 'support.apple.com',
+          title: 'About the security content of iOS 17.7 and iPadOS 17.7',
+          description:
+            '5 days ago · Available for: iPhone XS and later, iPad Pro 13-inch, iPad Pro 12.9-inch 2nd generation and later, iPad Pro 10.5-inch, iPad Pro 11-inch 1st generation and later, iPad …',
+          url: 'https://support.apple.com/en-us/121246',
+          breadcrumb: 'https://support.apple.com/en-us/121246',
+        },
+        {
+          type: 'organic',
+          rank_group: 26,
+          rank_absolute: 28,
+          domain: 'www.apple.com',
+          title: 'Buy iPhone 16 Pro and iPhone 16 Pro Max - Apple',
+          description:
+            'Price for iPhone 16 and iPhone 16 Plus includes $30 AT&T connectivity discount. Activation required. Boost Mobile iPhone 16 Special Deal: Buy an iPhone 16 Pro, iPhone 16 Pro …',
+          url: 'https://www.apple.com/shop/buy-iphone/iphone-16-pro',
+          breadcrumb: 'https://www.apple.com/shop/buy-iphone/iphone-16-pro',
+        },
+        {
+          type: 'organic',
+          rank_group: 27,
+          rank_absolute: 29,
+          domain: 'support.apple.com',
+          title: 'iPhone 16 Pro Max Repair Manual - Apple Support',
+          description:
+            '1 day ago · Camera or LiDAR issues. TrueDepth camera or Face ID issues. Display. Ambient light sensor, proximity sensor, or compass issues. Display and image issues. …',
+          url: 'https://support.apple.com/en-us/120819',
+          breadcrumb: 'https://support.apple.com/en-us/120819',
+        },
+        {
+          type: 'organic',
+          rank_group: 28,
+          rank_absolute: 30,
+          domain: 'www.apple.com',
+          title: 'Buy iPhone 15 and iPhone 15 Plus - Apple (UK)',
+          description:
+            'iPhone 16 Pro, iPhone 16, iPhone 15, iPhone 14 and iPhone SE are 5G capable. For 5G access, you need to activate your iPhone with a network provider that offers 5G service. …',
+          url: 'https://www.apple.com/uk/shop/buy-iphone/iphone-15',
+          breadcrumb: 'https://www.apple.com/uk/shop/buy-iphone/iphone-15',
+        },
+        {
+          type: 'organic',
+          rank_group: 29,
+          rank_absolute: 31,
+          domain: 'www.apple.com',
+          title: 'iPhone SE - Apple (UK)',
+          description:
+            'Big-time battery life. A highly efficient chip, an enhanced battery and iOS 18 work together to boost battery life. When you do need to charge, just place iPhone SE on a wireless …',
+          url: 'https://www.apple.com/uk/iphone-se/',
+          breadcrumb: 'https://www.apple.com/uk/iphone-se',
+        },
+        {
+          type: 'organic',
+          rank_group: 30,
+          rank_absolute: 32,
+          domain: 'support.apple.com',
+          title: 'Bookmark a website in Safari on iPhone - Apple Support',
+          description:
+            'Go to the Safari app on your iPhone. Tap . Tap Edit, then do any of the following: Create a new folder: Tap New Folder at the bottom left, enter a name, then tap Done. Move a …',
+          url: 'https://support.apple.com/guide/iphone/bookmark-a-website-iph42ab2f3a7/ios',
+          breadcrumb:
+            'https://support.apple.com/guide/iphone/bookmark-a-website-iph42a…',
+        },
+        {
+          type: 'organic',
+          rank_group: 31,
+          rank_absolute: 33,
+          domain: 'www.apple.com',
+          title: 'iPhone - Apple (IN)',
+          description:
+            'Built for Apple Intelligence. Discover the new iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16 and iPhone 16 Plus.',
+          url: 'https://www.apple.com/in/iphone/',
+          breadcrumb: 'https://www.apple.com/in/iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 32,
+          rank_absolute: 34,
+          domain: 'www.apple.com',
+          title: 'iPhone - Apple (ZA)',
+          description:
+            'Powerful. Beautiful. Durable. Check out the new iPhone 15 Pro, iPhone 15 Pro Max, iPhone 15, and iPhone 15 Plus.',
+          url: 'https://www.apple.com/za/iphone/',
+          breadcrumb: 'https://www.apple.com/za/iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 33,
+          rank_absolute: 35,
+          domain: 'www.apple.com',
+          title: 'iPhone - Apple (PH)',
+          description:
+            'Discover the new iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16, and iPhone 16 Plus — built for Apple Intelligence.',
+          url: 'https://www.apple.com/ph/iphone/',
+          breadcrumb: 'https://www.apple.com/ph/iphone',
+        },
+        {
+          type: 'related_searches',
+          rank_group: 1,
+          rank_absolute: 36,
+          items: [
+            'iPhone official website',
+            'iphone.com',
+            'iPhones models',
+            'latest iPhones and their prices',
+            "what's the best iPhone model",
+            'types of iPhones and prices',
+            'iPhone all models',
+            'cheapest iPhone to buy outright',
+          ],
+        },
+        {
+          type: 'paid',
+          rank_group: 1,
+          rank_absolute: 37,
+          domain: 'www.o2.co.uk',
+          title: 'Free Next Day Delivery | Shop iPhone 16 For £36.53/m',
+          description:
+            'Ad Save Up To £600 With Trade-In. Order The iPhone 16 For £36.53/m On O2. New Release. Order The Apple iPhone 16 128GB & Save Up To £600 With Trade-In',
+          url: 'https://www.o2.co.uk/shop/apple/iphone-16',
+          breadcrumb: 'https://www.o2.co.uk/iPhone_16/O2',
+        },
+        {
+          type: 'paid',
+          rank_group: 2,
+          rank_absolute: 38,
+          domain: 'www.sky.com',
+          title: 'Get The Latest iPhone | Buy Now From Only £26/m',
+          description:
+            'Ad Buy The New iPhone 16 & Pair With 50% Off Selected Data Plans For 12 Months. Change Your Data Plan Whenever To Suit You Or Save Your Spare Data With Sky Mobile',
+          url: 'https://www.sky.com/shop/mobile/phones/apple/apple-iphone-16',
+          breadcrumb: 'https://www.sky.com/iPhone/16',
+        },
+        {
+          type: 'organic',
+          rank_group: 34,
+          rank_absolute: 39,
+          domain: 'www.amazon.co.uk',
+          title: 'Amazon.co.uk: Iphone',
+          description:
+            'Pre-owned Certified products are inspected, cleaned and (if applicable) repaired to excellent functional standards. By purchasing pre-owned rather than new, customers can extend the life of the product, reduce electronic waste, and reduce the extraction of raw materials.',
+          url: 'https://www.amazon.co.uk/iphone/s?k=iphone',
+          breadcrumb: 'https://www.amazon.co.uk/iphone/s?k=iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 35,
+          rank_absolute: 40,
+          domain: 'www.which.co.uk',
+          title: 'Best iPhone 2024: Which Apple iPhone Should I Buy?',
+          description:
+            '23 Aug 2024 · Apple iPhones are typically very expensive, with no particularly budget-friendly options when you buy brand new. The iPhone 15 Pro Max is the highest-spec phone in the 15 series, launched in …',
+          url: 'https://www.which.co.uk/reviews/mobile-phones/article/which-apple-iphone-should-i-buy-agShr2W5AgUA',
+          breadcrumb: 'https://www.which.co.uk/reviews/mobile-p…',
+        },
+        {
+          type: 'organic',
+          rank_group: 36,
+          rank_absolute: 41,
+          domain: 'www.techradar.com',
+          title: 'Best iPhone 2024: which Apple phone is for you?',
+          description:
+            "2 days ago · If you want the very best iPhone money can buy right now, the iPhone 16 Pro Max is the model to go for. The iPhone 15 Pro Max was already (and still is) an exceptional handset, but Apple's latest ...",
+          url: 'https://www.techradar.com/news/best-iphone',
+          breadcrumb: 'https://www.techradar.com/news/best-i…',
+        },
+        {
+          type: 'organic',
+          rank_group: 37,
+          rank_absolute: 42,
+          domain: 'www.apple.com',
+          title: 'Apple Store Online - Apple (UK)',
+          description:
+            'Get ready for iPhone 16 and iPhone 16 Pro pre‑order now. Then speed through checkout on 13.09.',
+          url: 'https://www.apple.com/uk/store',
+          breadcrumb: 'https://www.apple.com/uk/store',
+        },
+        {
+          type: 'organic',
+          rank_group: 38,
+          rank_absolute: 43,
+          domain: 'www.apple.com',
+          title: 'iPhone - Apple（日本）',
+          description:
+            '生まれつきインテリジェント。 iPhone の最新モデルは、Apple Intelligenceのために設計されています。このパーソナルなインテリジェンスシステムは、あなたが文章を書いたり、自分を表現したり、タスクを簡単にこなせるようにサポート。',
+          url: 'https://www.apple.com/jp/iphone/',
+          breadcrumb: 'https://www.apple.com/jp/iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 39,
+          rank_absolute: 44,
+          domain: 'www.apple.com',
+          title: 'iPhone - Apple (NZ)',
+          description:
+            'Designed for Apple Intelligence. Discover the new iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16 and iPhone 16 Plus.',
+          url: 'https://www.apple.com/nz/iphone/',
+          breadcrumb: 'https://www.apple.com/nz/iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 40,
+          rank_absolute: 45,
+          domain: 'www.apple.com',
+          title: 'Refurbished iPhone Deals - Apple (UK)',
+          description:
+            'Save up to 15% on a refurbished iPhone from Apple. Full 1-year warranty with a brand new battery and outer shell. Free delivery and returns.',
+          url: 'https://www.apple.com/uk/shop/refurbished/iphone',
+          breadcrumb: 'https://www.apple.com/uk/shop/refurbished/iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 41,
+          rank_absolute: 46,
+          domain: 'www.apple.com',
+          title: 'iPhone - Apple (AU)',
+          description:
+            'Designed for Apple Intelligence. Discover the new iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16 and iPhone 16 Plus.',
+          url: 'https://www.apple.com/au/iphone/',
+          breadcrumb: 'https://www.apple.com/au/iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 42,
+          rank_absolute: 47,
+          domain: 'www.gsmarena.com',
+          title:
+            'Apple iPhone XS Max - Full phone specifications - GSMArena.com',
+          description:
+            '12 Sep 2018 · Apple iPhone XS Max smartphone. Announced Sep 2018. Features 6.5″ display, Apple A12 Bionic chipset, Dual: 12 MP (f/1.8, 26mm, 1/2.55″, 1.4µm) + 12 MP primary camera, 7 MP front camera, 3174 ...',
+          url: 'https://www.gsmarena.com/apple_iphone_xs_max-9319.php',
+          breadcrumb: 'https://www.gsmarena.com/apple_iphone_xs_max-9319.php',
+        },
+        {
+          type: 'organic',
+          rank_group: 43,
+          rank_absolute: 48,
+          domain: 'www.moneysavingexpert.com',
+          title: 'Cheap iPhone Deals – new & old models - Money Saving Expert',
+          description:
+            'Compare the best iPhone deals and MoneySaving tips to find a top end Apple smartphone without busting your budget. We find the cheapest prices and best ways to get the latest iPhone X, iPhone 8, iPhone 8 Plus, iPhone 7 and iPhone 7 Plus. Save on your mobile contract with the cheap iPhone guide from MoneySavingExpert.',
+          url: 'https://www.moneysavingexpert.com/mobiles/cheap-iphone/',
+          breadcrumb: 'https://www.moneysavingexpert.com/mobiles/cheap-iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 44,
+          rank_absolute: 49,
+          domain: 'www.apple.com',
+          title: 'iPhone - Apple (RO)',
+          description:
+            'Zoom cât cuprinde. Cu o gamă largă de distanțe focale, iPhone îți oferă o flexibilitate excepțională în ceea ce privește încadrarea: de la prim-planuri clare, la poze spectaculoase obținute cu obiectivul ultra larg, care îți permit să surprinzi mai mult dintr-o scenă fără să faci niciun pas înapoi.',
+          url: 'https://www.apple.com/ro/iphone/',
+          breadcrumb: 'https://www.apple.com/ro/iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 45,
+          rank_absolute: 50,
+          domain: 'www.apple.com',
+          title: 'iPhone - Apple (BG)',
+          description:
+            'От зуум към зуууууум. С голям диапазон фокални варианти, iPhone предлага изключителна гъвкавост за кадриране — от близки планове до мащабни Ultra Wide пейзажи, с които улавяш по-голяма част от сцената, без да отстъпваш назад.',
+          url: 'https://www.apple.com/bg/iphone/',
+          breadcrumb: 'https://www.apple.com/bg/iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 46,
+          rank_absolute: 51,
+          domain: 'support.apple.com',
+          title: 'iPhone – Official Apple Support',
+          description:
+            'Find out how to set up and use your iPhone. Find all the topics, resources and contact options you need for iPhone.',
+          url: 'https://support.apple.com/en-gb/iphone',
+          breadcrumb: 'https://support.apple.com/en-gb/iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 47,
+          rank_absolute: 52,
+          domain: 'support.apple.com',
+          title: 'iPhone - Official Apple Support',
+          description:
+            'Get official support for your iPhone, including setup guides, resources, and contact options.',
+          url: 'https://support.apple.com/iphone',
+          breadcrumb: 'https://support.apple.com/iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 48,
+          rank_absolute: 53,
+          domain: 'www.apple.com',
+          title: 'Buying iPhone - Apple',
+          description:
+            'Purchase your next iPhone from the Apple Store. Get answers about carriers, offers, payments, trade-in, setup, and more.',
+          url: 'https://www.apple.com/iphone/buy/',
+          breadcrumb: 'https://www.apple.com/iphone/buy',
+        },
+        {
+          type: 'organic',
+          rank_group: 49,
+          rank_absolute: 54,
+          domain: 'www.gsmarena.com',
+          title: 'Apple iPhone XR - Full phone specifications - GSMArena.com',
+          description:
+            '12 Sep 2018 · Apple iPhone XR smartphone. Announced Sep 2018. Features 6.1″ display, Apple A12 Bionic chipset, 12 MP primary camera, 7 MP front camera, 2942 mAh battery, 256 GB storage, 3 GB RAM, Scratch ...',
+          url: 'https://www.gsmarena.com/apple_iphone_xr-9320.php',
+          breadcrumb: 'https://www.gsmarena.com/apple_iphone_xr-9320.php',
+        },
+        {
+          type: 'organic',
+          rank_group: 50,
+          rank_absolute: 55,
+          domain: 'www.apple.com',
+          title: 'Buy iPhone - Apple (IN)',
+          description:
+            'Shop the latest iPhone models and accessories, and get up to ₹5000 instant cashback with eligible cards. Terms apply. No Cost EMI available.',
+          url: 'https://www.apple.com/in/shop/buy-iphone',
+          breadcrumb: 'https://www.apple.com/in/shop/buy-iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 51,
+          rank_absolute: 56,
+          domain: 'www.currys.co.uk',
+          title: 'Buy APPLE iPhone 12 - 64 GB, Black - Currys',
+          description:
+            "Apple iPhone 12 is packed with smart and powerful features. The A14 Bionic chip and its 16-core Neural Engine are running the show and they don't get slowed down by any app or game.From Apple TV to emails, everything looks amazing on the 6.1” Super Retina XDR display.The dual-camera system on the back lets you pick between wide and ultra-wide …",
+          url: 'https://www.currys.co.uk/products/apple-iphone-12-64-gb-black-10215596.html',
+          breadcrumb:
+            'https://www.currys.co.uk/products/apple-iphone-12-64-gb-black-102…',
+        },
+        {
+          type: 'organic',
+          rank_group: 52,
+          rank_absolute: 57,
+          domain: 'www.currys.co.uk',
+          title: 'Apple iPhone - Currys',
+          description:
+            'Bag great deals on incredible Apple iPhone products in our collection here at currys. Available online for delivery or order & collect in store.',
+          url: 'https://www.currys.co.uk/brand/apple/latest-products/apple-iphone-home.html',
+          breadcrumb:
+            'https://www.currys.co.uk/brand/apple/latest-products/apple-iphone …',
+        },
+        {
+          type: 'organic',
+          rank_group: 53,
+          rank_absolute: 58,
+          domain: 'www.apple.com',
+          title: 'Apple introduces iPhone 14 and iPhone 14 Plus - Apple',
+          description:
+            '7 Sep 2022 · Available in the popular 6.1-inch size and a stunning new 6.7-inch size, 2 iPhone 14 and iPhone 14 Plus feature a durable and sleek aerospace-grade aluminum design in five beautiful finishes. The larger display of iPhone 14 Plus is great for streaming movies and playing games, and iPhone 14 Plus boasts the best battery life ever in an …',
+          url: 'https://www.apple.com/newsroom/2022/09/apple-introduces-iphone-14-and-iphone-14-plus/',
+          breadcrumb:
+            'https://www.apple.com/newsroom/2022/09/apple-introduces-iphon…',
+        },
+        {
+          type: 'organic',
+          rank_group: 54,
+          rank_absolute: 59,
+          domain: 'www.argos.co.uk',
+          title: 'Results for iphone 12 - Argos',
+          description:
+            'Get set for iphone 12 at Argos. Same Day delivery 7 days a week, or fast store collection.',
+          url: 'https://www.argos.co.uk/sd/iphone-12/',
+          breadcrumb: 'https://www.argos.co.uk/sd/iphone-12',
+        },
+        {
+          type: 'organic',
+          rank_group: 55,
+          rank_absolute: 60,
+          domain: 'www.apple.com',
+          title: '301 Moved Permanently',
+          description: 'Moved Permanently. The document has moved here.',
+          url: 'https://www.apple.com/uk/shop/buy-iphone/iphone-13',
+          breadcrumb: 'https://www.apple.com/uk/shop/buy-iphone/iphone-13',
+        },
+        {
+          type: 'organic',
+          rank_group: 56,
+          rank_absolute: 61,
+          domain: 'support.apple.com',
+          title: 'iPhone XR - Technical Specifications – Apple Support (UK)',
+          description:
+            'Display. Liquid Retina HD display. 6.1-inch (diagonal) all-screen LCD Multi-Touch display with IPS technology. 1792-by-828-pixel resolution at 326 ppi',
+          url: 'https://support.apple.com/en-gb/111868',
+          breadcrumb: 'https://support.apple.com/en-gb/111868',
+        },
+        {
+          type: 'organic',
+          rank_group: 57,
+          rank_absolute: 62,
+          domain: 'www.apple.com',
+          title: 'iPhone Upgrade Programme - Apple (UK)',
+          description:
+            'Upgrade to the latest iPhone. As an existing member of the iPhone Upgrade Programme, you can easily upgrade to a new iPhone. Check whether you are eligible to upgrade today and reserve your new iPhone online or using the Apple Store app.',
+          url: 'https://www.apple.com/uk/shop/iphone/iphone-upgrade-program',
+          breadcrumb:
+            'https://www.apple.com/uk/shop/iphone/iphone-upgrade-program',
+        },
+        {
+          type: 'organic',
+          rank_group: 58,
+          rank_absolute: 63,
+          domain: 'www.moneysupermarket.com',
+          title: 'Is the iPhone XS worth buying in 2024? - MoneySuperMarket',
+          description:
+            '14 Feb 2023 · About the iPhone XS. The standard-sized 2018 iPhone launched alongside its bigger cousin, the iPhone XS Max, and both represented gentle mobile upgrades at the time.. It’s no longer offered by Apple, but still available to buy from third party retailers. And it has software support right up to the current iOS – Apple hasn’t forsaken it yet.',
+          url: 'https://www.moneysupermarket.com/mobile-phones/phone-reviews/iphone-xs/',
+          breadcrumb:
+            'https://www.moneysupermarket.com/mobile-phones/phone-reviews…',
+        },
+        {
+          type: 'organic',
+          rank_group: 59,
+          rank_absolute: 64,
+          domain: 'www.vodafone.co.uk',
+          title: 'New Apple iPhone | Discover the latest iPhone | Vodafone UK',
+          description:
+            'Discover the new iPhone 16 range with Vodafone. Compare the latest iPhones and choose the right one for you on our reliable network.',
+          url: 'https://www.vodafone.co.uk/iphone',
+          breadcrumb: 'https://www.vodafone.co.uk/iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 60,
+          rank_absolute: 65,
+          domain: 'www.wired.com',
+          title: 'Best iPhone (2024): Which Model Should You Buy? - WIRED',
+          description:
+            "4 Aug 2024 · The iPhone 14 and iPhone 14 Plus (7/10, WIRED Recommends) are an awful lot like the iPhone 13, which isn't a bad thing.It has a similar processor—the A15 Bionic with one additional graphics core ...",
+          url: 'https://www.wired.com/gallery/iphone-buying-guide/',
+          breadcrumb: 'https://www.wired.com/gallery/iphone-buying-guide',
+        },
+        {
+          type: 'organic',
+          rank_group: 61,
+          rank_absolute: 66,
+          domain: 'www.apple.com',
+          title: 'iPhone - Apple (QA)',
+          description:
+            'Make movies like the movies. iPhone records in HDR, so whether you use Action mode to steady really shaky scenes as you shoot or capture striking slo‑mo shots in 4K 120 fps Dolby Vision on iPhone 16 Pro — every frame looks incredible.',
+          url: 'https://www.apple.com/qa/iphone/',
+          breadcrumb: 'https://www.apple.com/qa/iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 62,
+          rank_absolute: 67,
+          domain: 'www.cnet.com',
+          title: 'Best iPhone in 2024: Which Apple Phone Should You Buy?',
+          description:
+            'The iPhone 16 lineup has dropped and brings new processors, upgraded cameras, larger batteries, a new Audio Mix tool for videos, bigger screens on pro models and a phone built for Apple ...',
+          url: 'https://www.cnet.com/tech/mobile/best-iphone/',
+          breadcrumb: 'https://www.cnet.com/tech/mobile/best-iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 63,
+          rank_absolute: 68,
+          domain: 'support.apple.com',
+          title: 'Identify your iPhone model - Apple Support',
+          description:
+            "2 days ago · Details: The iPhone 16 has a 6.1-inch all-screen Super Retina XDR display with the Dynamic Island. The back is textured matte glass, and there's a contoured-edge anodized aluminum band around the frame.",
+          url: 'https://support.apple.com/en-us/108044',
+          breadcrumb: 'https://support.apple.com/en-us/108044',
+        },
+        {
+          type: 'organic',
+          rank_group: 64,
+          rank_absolute: 69,
+          domain: 'www.apple.com',
+          title: 'vs - Apple',
+          description:
+            'Compare features and technical specifications for iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16, iPhone 16 Plus, iPhone SE, and many more.',
+          url: 'https://www.apple.com/iphone/compare/?modelList=iphone-XS,iphone-X',
+          breadcrumb:
+            'https://www.apple.com/iphone/compare/?modelList=iphone-XS,iph…',
+        },
+        {
+          type: 'organic',
+          rank_group: 65,
+          rank_absolute: 70,
+          domain: 'www.apple.com',
+          title: 'Buy iPhone 15 Pro and iPhone 15 Pro Max - Apple (UK)',
+          description: 'Moved Permanently. The document has moved here.',
+          url: 'https://www.apple.com/uk/shop/buy-iphone/iphone-15-pro',
+          breadcrumb: 'https://www.apple.com/uk/shop/buy-iphone/iphone-15-pro',
+        },
+        {
+          type: 'organic',
+          rank_group: 66,
+          rank_absolute: 71,
+          domain: 'www.techradar.com',
+          title: 'Best iPhone 2024: which Apple phone is for you? | TechRadar',
+          description:
+            "9 Sep 2024 · The best iPhone in 2024 is, objectively speaking, the iPhone 15 Pro Max, but with Apple having unveiled the iPhone 16 series at its latest Apple event on September 9, we'd advise against picking ...",
+          url: 'https://www.techradar.com/uk/news/best-iphone',
+          breadcrumb: 'https://www.techradar.com/uk/news/best-iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 67,
+          rank_absolute: 72,
+          domain: 'www.apple.com',
+          title: 'Buy iPhone 14 and iPhone 14 Plus - Apple',
+          description:
+            'Get iPhone 14 and iPhone 14 Plus for an amazing price with special carrier trade-in offers. Make low monthly payments at 0% APR. Buy now with fast, free shipping.',
+          url: 'https://www.apple.com/shop/buy-iphone/iphone-14',
+          breadcrumb: 'https://www.apple.com/shop/buy-iphone/iphone-14',
+        },
+        {
+          type: 'organic',
+          rank_group: 68,
+          rank_absolute: 73,
+          domain: 'www.amazon.com',
+          title: 'Amazon.com: Iphone',
+          description:
+            'Boost Mobile | Apple iPhone 16 Plus (128 GB) - Ultramarine [Locked]. Apple Intelligence. Requires Unlimited Plan.',
+          url: 'https://www.amazon.com/iphone/s?k=iphone',
+          breadcrumb: 'https://www.amazon.com/iphone/s?k=iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 69,
+          rank_absolute: 74,
+          domain: 'www.apple.com',
+          title: 'iPhone - Apple (TH)',
+          description:
+            'มาทำความรู้จักกับ iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16 และ iPhone 16 Plus ใหม่ ที่สร้างมาเพื่อ Apple Intelligence',
+          url: 'https://www.apple.com/th/iphone/',
+          breadcrumb: 'https://www.apple.com/th/iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 70,
+          rank_absolute: 75,
+          domain: 'www.apple.com',
+          title: 'iPhone - Apple (HU)',
+          description:
+            'Készíts filmbe illő filmeket. Az iPhone HDR-ben rögzíti a felvételeket, ezért akár Akció módban stabilizálsz erősen rázkódó jeleneteket forgatás közben, akár lassított videókat készítesz 4K‑s, 120 képkocka/s sebességű Dolby Visionben az iPhone 16 Prón, minden képkocka hihetetlenül jól fog kinézni.',
+          url: 'https://www.apple.com/hu/iphone/',
+          breadcrumb: 'https://www.apple.com/hu/iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 71,
+          rank_absolute: 76,
+          domain: 'www.techradar.com',
+          title: 'iPhone 15: price, features, cameras, USB-C, and everything',
+          description:
+            '22 Sep 2023 · iPhone 15 iPhone 15 Plus iPhone 15 Pro iPhone 15 Pro Max; Dimensions: 147.6 mm x 71.6 mm x 7.80 mm: 160.9 mm x 77.8 mm x 7.80 mm: 146.6 mm x 70.6 mm x 8.25 mm',
+          url: 'https://www.techradar.com/news/iphone-15',
+          breadcrumb: 'https://www.techradar.com/news/iphone-15',
+        },
+        {
+          type: 'organic',
+          rank_group: 72,
+          rank_absolute: 77,
+          domain: 'www.apple.com',
+          title: 'Apple introduces iPhone 13 and iPhone 13 mini - Apple',
+          description:
+            '14 Sep 2021 · CUPERTINO, CALIFORNIA Apple today introduced iPhone 13 and iPhone 13 mini, the next generation of the world’s best smartphone, featuring a beautiful design with sleek flat edges in five gorgeous new colors.Both models feature major innovations, including the most advanced dual-camera system ever on iPhone — with a new Wide …',
+          url: 'https://www.apple.com/newsroom/2021/09/apple-introduces-iphone-13-and-iphone-13-mini/',
+          breadcrumb:
+            'https://www.apple.com/newsroom/2021/09/apple-introduces-iphon…',
+        },
+        {
+          type: 'organic',
+          rank_group: 73,
+          rank_absolute: 78,
+          domain: 'www.jbhifi.com.au',
+          title: 'iPhones - Shop iPhone 16, 15, 14 Series & More - JB Hi-Fi',
+          description:
+            "Whether you're looking to upgrade or switch to iOS, JB’s got the perfect Apple iPhone for you! With a range that includes the iPhone 15 and the latest iPhone 16, 16 Plus, 16 Pro, and 16 Pro Max in multiple colour and storage options, your …",
+          url: 'https://www.jbhifi.com.au/collections/mobile-phones/iphones',
+          breadcrumb:
+            'https://www.jbhifi.com.au/collections/mobile-phones/iphones',
+        },
+        {
+          type: 'organic',
+          rank_group: 74,
+          rank_absolute: 79,
+          domain: 'www.apple.com',
+          title: 'iPhone - Apple (EG)',
+          description:
+            'Apple Footer. The display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 5.42 inches ( iPhone 13 mini), 6.06 inches ( iPhone 13, iPhone 13 Pro), 6.68 inches ( iPhone 13 Pro Max), 5.42 inches ( iPhone 12 mini), or 6.06 inches ( iPhone …',
+          url: 'https://www.apple.com/eg/iphone/',
+          breadcrumb: 'https://www.apple.com/eg/iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 75,
+          rank_absolute: 80,
+          domain: 'www.apple.com',
+          title: 'Buy iPhone 15 and iPhone 15 Plus - Apple',
+          description:
+            'Get $40 - $650 off a new iPhone 15 or iPhone 15 Plus when you trade in an iPhone 7 Plus or newer. 0% financing available. Buy now with free shipping.',
+          url: 'https://www.apple.com/shop/buy-iphone/iphone-15',
+          breadcrumb: 'https://www.apple.com/shop/buy-iphone/iphone-15',
+        },
+        {
+          type: 'organic',
+          rank_group: 76,
+          rank_absolute: 81,
+          domain: 'www.apple.com',
+          title: 'vs vs - Apple (UK)',
+          description:
+            'Compare features and technical specifications for iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16, iPhone 16 Plus, iPhone SE and many more.',
+          url: 'https://www.apple.com/uk/iphone/compare/?modelList=iphone-X,iphone-XS-max,iphone-XS',
+          breadcrumb:
+            'https://www.apple.com/uk/iphone/compare/?modelList=iphone-X,ip…',
+        },
+        {
+          type: 'organic',
+          rank_group: 77,
+          rank_absolute: 82,
+          domain: 'www.apple.com',
+          title: 'iPhone SE - Apple',
+          description:
+            'Discover the iPhone SE, a powerful and compact smartphone with exceptional capabilities, performance, and an iconic design.',
+          url: 'https://www.apple.com/iphone-se/',
+          breadcrumb: 'https://www.apple.com/iphone-se',
+        },
+        {
+          type: 'organic',
+          rank_group: 78,
+          rank_absolute: 83,
+          domain: 'www.which.co.uk',
+          title: 'Apple iPhone vs Samsung Galaxy: who makes the best …',
+          description:
+            "22 Jul 2024 · Apple iPhone 15 series. The Apple iPhone 15 is the brand's standard flagship phone in last year's range, released in September 2023. It has a 6.1-inch OLED display with a high 2,556 x 1,179-pixel resolution and the Dynamic Island feature. It has an upgraded 48Mp main camera with new features.",
+          url: 'https://www.which.co.uk/reviews/mobile-phones/article/apple-iphone-vs-samsung-galaxy-mobile-phones-aZL5V5m4UGbw',
+          breadcrumb:
+            'https://www.which.co.uk/reviews/mobile-phones/article/apple-iphone-v…',
+        },
+        {
+          type: 'organic',
+          rank_group: 79,
+          rank_absolute: 84,
+          domain: 'www.apple.com',
+          title: 'iPhone - Apple (KE)',
+          description:
+            'Apple Footer. The display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 5.42 inches ( iPhone 13 mini, iPhone 12 mini), 5.85 inches ( iPhone 11 Pro, iPhone XS, iPhone X), 6.06 inches ( iPhone 14, iPhone 13 Pro, iPhone 13, …',
+          url: 'https://www.apple.com/ke/iphone/',
+          breadcrumb: 'https://www.apple.com/ke/iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 80,
+          rank_absolute: 85,
+          domain: 'www.gsmarena.com',
+          title: 'Apple iPhone 13 - Full phone specifications - GSMArena.com',
+          description:
+            '14 Sep 2021 · Apple iPhone 13 smartphone. Announced Sep 2021. Features 6.1″ display, Apple A15 Bionic chipset, 3240 mAh battery, 512 GB storage, 4 GB RAM, Ceramic Shield glass.',
+          url: 'https://www.gsmarena.com/apple_iphone_13-11103.php',
+          breadcrumb: 'https://www.gsmarena.com/apple_iphone_13-11103.php',
+        },
+        {
+          type: 'organic',
+          rank_group: 81,
+          rank_absolute: 86,
+          domain: 'www.apple.com',
+          title: 'Buy iPhone - Apple (AE)',
+          description:
+            'Shop the latest iPhone models and accessories and find flexible monthly payment options that work for you. Get expert help today.',
+          url: 'https://www.apple.com/ae/shop/buy-iphone',
+          breadcrumb: 'https://www.apple.com/ae/shop/buy-iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 82,
+          rank_absolute: 87,
+          domain: 'www.apple.com',
+          title: 'iPhone - Compare Models - Apple (AE)',
+          description:
+            'Compare features and technical specifications for iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16, iPhone 16 Plus, iPhone SE, and many more.',
+          url: 'https://www.apple.com/ae/iphone/compare/',
+          breadcrumb: 'https://www.apple.com/ae/iphone/compare',
+        },
+        {
+          type: 'organic',
+          rank_group: 83,
+          rank_absolute: 88,
+          domain: 'www.telegraph.co.uk',
+          title:
+            'iPhone 16: Pro and Pro Max release date, prices and new features',
+          description:
+            '9 Sep 2024 · Apple has unveiled its iPhone 16 at an annual launch event in California in early September, as the US tech giant seeks to entice consumers with a raft of new artificial intelligence (AI) features ...',
+          url: 'https://www.telegraph.co.uk/business/2024/09/16/what-to-expect-from-apples-iphone-16-launch/',
+          breadcrumb:
+            'https://www.telegraph.co.uk/business/2024/09/16/what-to-expect-fr…',
+        },
+        {
+          type: 'paid',
+          rank_group: 3,
+          rank_absolute: 89,
+          domain: 'www.carphonewarehouse.com',
+          title: 'Get Your SIM Free Mobile Phone | Free Delivery 7 Days a Week',
+          description:
+            'Ad We Offer Free Delivery 7 Days A Week, To Fit Right In With Your Busy Life. Order Now. Browse And Order Online From Our Huge Range of Products. Get Yours From Carphone Warehouse',
+          url: 'https://www.carphonewarehouse.com/mobiles/sim-free',
+          breadcrumb:
+            'https://www.carphonewarehouse.com/SIM Free/Mobile Phones',
+        },
+        {
+          type: 'paid',
+          rank_group: 4,
+          rank_absolute: 90,
+          domain: 'tradein.co.uk',
+          title: 'Sell Your Apple Devices Online | Maximum Cash Same Day',
+          description:
+            'Ad Quick & Easy way. Best Place to Sell, Get Same Day Payment. Best Price in The Market. Sell Yours Now! Full Website Price, No Deductions For Minor Scuffs Or Scratches.',
+          url: 'https://tradein.co.uk/sell-now/apple.html',
+          breadcrumb: 'https://tradein.co.uk/Apple/Devices',
+        },
+        {
+          type: 'paid',
+          rank_group: 5,
+          rank_absolute: 91,
+          domain: 'www.backmarket.co.uk',
+          title: 'Shop Refurbished iPhones | Up to 50% Less vs. Buying New',
+          description:
+            'Ad Discover outstanding Apple iPhone deals! Up to 50% cheaper than new. Shop everything from iPhones to laptops, coffee machines, consoles, headphones & more.',
+          url: 'https://www.backmarket.co.uk/en-gb/l/iphone/aabc736a-cb66-4ac0-a3b7-0f449781ed39',
+          breadcrumb: 'https://www.backmarket.co.uk',
+        },
+        {
+          type: 'paid',
+          rank_group: 6,
+          rank_absolute: 92,
+          domain: 'www.o2.co.uk',
+          title: 'Free Next Day Delivery | Shop iPhone 16 For £36.53/m',
+          description:
+            'Ad Save Up To £600 With Trade-In. Order The iPhone 16 For £36.53/m On O2. New Release. Order The Apple iPhone 16 128GB & Save Up To £600 With Trade-In',
+          url: 'https://www.o2.co.uk/shop/apple/iphone-16',
+          breadcrumb: 'https://www.o2.co.uk/iPhone_16/O2',
+        },
+        {
+          type: 'related_searches',
+          rank_group: 2,
+          rank_absolute: 93,
+          items: [
+            'iPhone official website',
+            'iphone.com',
+            'iPhones models',
+            'latest iPhones and their prices',
+            "what's the best iPhone model",
+            'types of iPhones and prices',
+            'iPhone all models',
+            'cheapest iPhone to buy outright',
+          ],
+        },
+        {
+          type: 'paid',
+          rank_group: 7,
+          rank_absolute: 94,
+          domain: 'www.carphonewarehouse.com',
+          title: 'SIM Free Or Pay Monthly',
+          description:
+            'We Compare, You Save. Check Out Our Latest Contract, SIM Free and SIM Only Deals',
+          url: 'https://www.carphonewarehouse.com/mobiles/sim-free',
+          breadcrumb: 'https://www.carphonewarehouse.com',
+        },
+        {
+          type: 'paid',
+          rank_group: 8,
+          rank_absolute: 96,
+          domain: 'tradein.co.uk',
+          title:
+            'Sell Your Apple Devices Online | We Pay More Than Anyone Else‎',
+          description:
+            'Ad Get a Personalised Quote Now. Discover How Much Cash You Could Get for Your Apple Device',
+          url: 'https://tradein.co.uk/sell-now/apple.html',
+          breadcrumb: 'https://tradein.co.uk › Apple › Devices',
+        },
+        {
+          type: 'paid',
+          rank_group: 9,
+          rank_absolute: 97,
+          domain: 'www.mobilephonesdirect.co.uk',
+          title: 'Pay Monthly Phone Deals | Apple iPhone Deals',
+          description:
+            'Ad Shop Great Contract Deals On The Apple iPhones. Includes Free Next Day Delivery. As New iPhones - Perfect Phones For A Fraction Of The Price. Order Online Today',
+          url: 'https://www.mobilephonesdirect.co.uk/deals/as-new-deals',
+          breadcrumb: 'https://www.mobilephonesdirect.co.uk › Apple',
+        },
+        {
+          type: 'organic',
+          rank_group: 84,
+          rank_absolute: 98,
+          domain: 'www.apple.com',
+          title: 'iPhone - Apple (ID)',
+          description:
+            'Bikin video seperti di film-film. iPhone merekam dalam HDR, jadi baik Anda menggunakan mode Aksi untuk memuluskan adegan yang tidak stabil sambil merekam, atau menangkap efek kedalaman yang artistik dengan …',
+          url: 'https://www.apple.com/id/iphone/',
+          breadcrumb: 'https://www.apple.com › id › iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 85,
+          rank_absolute: 99,
+          domain: 'www.istore.co.za',
+          title: 'iPhone 13 - iStore South Africa',
+          description:
+            'iPhone 13. Pick your new superpower iPhone 13. The most advanced dual-camera system ever on iPhone. Lightning fast A15 Bionic chip. A big leap in battery life. Durable design. Superfast 5G¹. And brighter 6.1-inch …',
+          url: 'https://www.istore.co.za/iphone-13-shop',
+          breadcrumb: 'https://www.istore.co.za',
+        },
+        {
+          type: 'organic',
+          rank_group: 86,
+          rank_absolute: 100,
+          domain: 'www.apple.com',
+          title: 'iPhone - Apple (FI)',
+          description:
+            'Kuvaa kuin elokuvaa. iPhone tallentaa HDR‑videota. Siinä jokainen kuva näyttää upealta, käytitpä sitten toiminta­tilaa tärisevien näkymien vakauttamiseen tai kuvasitpa hidastettuja 4K-tasoisia 120 fps Dolby …',
+          url: 'https://www.apple.com/fi/iphone/',
+          breadcrumb: 'https://www.apple.com › fi › iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 87,
+          rank_absolute: 102,
+          domain: 'www.istore.co.za',
+          title: 'Shop Apple iPhone Range | Free Same Day Delivery - iStore …',
+          description:
+            'Shop the latest Apple iPhone range as well as accessories to go with your new iPhone at iStore. iStore - The dedicated hub for all Apple products alongside the best Apple experience and exclusive services.',
+          url: 'https://www.istore.co.za/iphone',
+          breadcrumb: 'https://www.istore.co.za › iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 88,
+          rank_absolute: 103,
+          domain: 'www.gsmarena.com',
+          title: 'Compare Apple iPhone XR vs. Apple iPhone XS - GSMArena.com',
+          description:
+            'Apple iPhone XR specs compared to Apple iPhone XS. Detailed up-do-date specifications shown side by side.',
+          url: 'https://www.gsmarena.com/compare.php3?idPhone1=9320&idPhone2=9318',
+          breadcrumb: 'https://www.gsmarena.com',
+        },
+        {
+          type: 'organic',
+          rank_group: 89,
+          rank_absolute: 104,
+          domain: 'www.apple.com',
+          title: 'Buy iPhone 16 Pro and iPhone 16 Pro Max - Apple (UK)',
+          description:
+            'Get £30–£645 off iPhone 16 Pro or iPhone 16 Pro Max when you trade in an iPhone 8 or newer. 0% financing available. Buy now with free shipping.',
+          url: 'https://www.apple.com/uk/shop/buy-iphone/iphone-16-pro',
+          breadcrumb: 'https://www.apple.com › uk › shop › buy-iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 90,
+          rank_absolute: 105,
+          domain: 'www.techradar.com',
+          title: 'iPhone XR review: decent battery life and a lower price tag',
+          description:
+            "7 Jun 2021 · The iPhone XR is a strong contender if you're looking for an affordable iPhone, boasting the latest software, enough power and surprisingly good battery life... for an iPhone.",
+          url: 'https://www.techradar.com/reviews/iphone-xr-review',
+          breadcrumb: 'https://www.techradar.com › reviews › iphone-xr',
+        },
+        {
+          type: 'organic',
+          rank_group: 91,
+          rank_absolute: 106,
+          domain: 'www.apple.com',
+          title:
+            'iPhone 14 and iPhone 14 Plus - Technical Specifications - Apple',
+          description:
+            'iPhone 14 Super Retina XDR display; 6.1‑inch (diagonal) all‑screen OLED display; 2532‑by‑1170-pixel resolution at 460 ppi; The iPhone 14 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle.',
+          url: 'https://www.apple.com/iphone-14/specs/',
+          breadcrumb: 'https://www.apple.com › specs',
+        },
+        {
+          type: 'organic',
+          rank_group: 92,
+          rank_absolute: 107,
+          domain: 'www.apple.com',
+          title: 'iPhone - Apple (JO)',
+          description:
+            'Make movies like the movies. iPhone records in HDR, so whether you use Action mode to steady really shaky scenes as you shoot or capture striking slo‑mo shots in 4K 120 fps Dolby Vision on iPhone 16 Pro — every frame looks incredible.',
+          url: 'https://www.apple.com/jo/iphone/',
+          breadcrumb: 'https://www.apple.com › jo › iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 93,
+          rank_absolute: 108,
+          domain: 'www.istore.co.za',
+          title: 'Shop Apple iPhone Range | Free Same Day Delivery - iStore …',
+          description:
+            'Shop the latest Apple iPhone range as well as accessories to go with your new iPhone at iStore. iStore - The dedicated hub for all Apple products alongside the best Apple experience and exclusive services.',
+          url: 'https://www.istore.co.za/iphone/shop-iphone-range',
+          breadcrumb: 'https://www.istore.co.za › iphone › shop-iphone-range',
+        },
+        {
+          type: 'organic',
+          rank_group: 94,
+          rank_absolute: 109,
+          domain: 'www.apple.com',
+          title: 'iPhone - Buying iPhone - Apple (IE)',
+          description:
+            'AppleCare+ for iPhone is an insurance product that provides up to two years of expert telephone technical support and hardware coverage, including unlimited incidents of accidental damage protection, each subject to an excess fee of €29 for screen or back glass damage, or €99 for other accidental damage.',
+          url: 'https://www.apple.com/ie/iphone/buy/',
+          breadcrumb: 'https://www.apple.com › ie › iphone › buy',
+        },
+        {
+          type: 'organic',
+          rank_group: 95,
+          rank_absolute: 110,
+          domain: 'www.apple.com',
+          title: 'vs iPhone 12 - Apple (UK)',
+          description:
+            'Compare features and technical specifications for iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16, iPhone 16 Plus, iPhone SE and many more.',
+          url: 'https://www.apple.com/uk/iphone/compare/?modelList=iphone-XS,iphone-12',
+          breadcrumb: 'https://www.apple.com › uk › iphone › compare',
+        },
+        {
+          type: 'organic',
+          rank_group: 96,
+          rank_absolute: 111,
+          domain: 'www.tescomobile.com',
+          title:
+            'Latest Apple iPhone Deals & Pay Monthly Contracts - Tesco Mobile',
+          description:
+            'Looking for a new iPhone ? Checkout our latest iPhone deals here at Tesco Mobile, including the iPhone 15 Pro Max, iPhone 15 Pro, iPhone 15 and iPhone 15 Plus.We’ve also got the iPhone 14, iPhone 13 and more on our shelves. Find the best iPhone contract deals for you with our flexible plans.And with our exclusive Clubcard Prices, you have …',
+          url: 'https://www.tescomobile.com/shop/apple',
+          breadcrumb: 'https://www.tescomobile.com › shop › apple',
+        },
+        {
+          type: 'organic',
+          rank_group: 97,
+          rank_absolute: 112,
+          domain: 'en.wikipedia.org',
+          title: 'iPhone XR - Wikipedia',
+          description:
+            'Brand: Apple Inc. Manufacturer: Foxconn [1] (on contract): Generation: 12th: Model: A1984 A2105 A2106 (sold in Japan) A2107 (sold in China) A2108 (sold in China, Hong Kong and Macau)',
+          url: 'https://en.wikipedia.org/wiki/IPhone_XR',
+          breadcrumb: 'https://en.wikipedia.org › wiki › IPhone_XR',
+        },
+        {
+          type: 'organic',
+          rank_group: 98,
+          rank_absolute: 113,
+          domain: 'www.apple.com',
+          title: 'iPhone - Compare Models - Apple (MY)',
+          description:
+            'Compare features and technical specifications for iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16, iPhone 16 Plus, iPhone SE and many more.',
+          url: 'https://www.apple.com/my/iphone/compare/',
+          breadcrumb: 'https://www.apple.com › my › iphone › compare',
+        },
+        {
+          type: 'organic',
+          rank_group: 99,
+          rank_absolute: 114,
+          domain: 'support.apple.com',
+          title: 'iPhone XS Manuals and Downloads - Apple Support',
+          description:
+            'Manuals, technical specifications, downloads, and more for Apple software and hardware',
+          url: 'https://support.apple.com/en-us/docs/iphone/505753',
+          breadcrumb: 'https://support.apple.com › en-us › docs › iphone',
+        },
+        {
+          type: 'organic',
+          rank_group: 100,
+          rank_absolute: 115,
+          domain: 'www.apple.com.cn',
+          title: 'iPhone - Apple (中国大陆)',
+          description:
+            '强劲、耐用、大放异彩。探索全新 iPhone 16 Pro、 iPhone 16 Pro Max、 iPhone 16 和 iPhone 16 Plus。',
+          url: 'https://www.apple.com.cn/iphone/',
+          breadcrumb: 'https://www.apple.com.cn › iphone',
+        },
+        {
+          type: 'paid',
+          rank_group: 10,
+          rank_absolute: 149,
+          domain: 'tradein.co.uk',
+          title:
+            'Sell Your Apple Devices Online | We Pay More Than Anyone Else‎',
+          description:
+            'Ad Get a Personalised Quote Now. Discover How Much Cash You Could Get for Your Apple Device',
+          url: 'https://tradein.co.uk/sell-now/apple.html',
+          breadcrumb: 'https://tradein.co.uk › Apple › Devices',
+        },
+        {
+          type: 'paid',
+          rank_group: 11,
+          rank_absolute: 150,
+          domain: 'www.mobilephonesdirect.co.uk',
+          title: 'Pay Monthly Phone Deals | Apple iPhone Deals',
+          description:
+            'Ad Shop Great Contract Deals On The Apple iPhones. Includes Free Next Day Delivery. As New iPhones - Perfect Phones For A Fraction Of The Price. Order Online Today',
+          url: 'https://www.mobilephonesdirect.co.uk/deals/as-new-deals',
+          breadcrumb: 'https://www.mobilephonesdirect.co.uk › Apple',
+        },
+        {
+          type: 'related_searches',
+          rank_group: 3,
+          rank_absolute: 151,
+          items: [
+            'iphone official website',
+            'iphone.com',
+            'iphones models',
+            'latest iphones and their prices',
+            "what's the best iphone model",
+            'types of iphones and prices',
+            'iphone all models',
+            'cheapest iphone to buy outright',
+          ],
+        },
+      ],
+    },
+  ],
+} as any;

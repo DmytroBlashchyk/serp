@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: "{{ include "chart.fullname" . }}-fapp"
+  annotations:
+{{ toYaml .Values.fapp.service.annotations | indent 4 }}
+  labels:
+{{ toYaml .Values.fapp.labels | indent 4 }}
+spec:
+  type: {{ .Values.fapp.service.type }}
+  ports:
+    - port: {{ .Values.fapp.service.port }}
+      targetPort: {{ .Values.fapp.service.targetPort }}
+      protocol: {{ .Values.fapp.service.protocol }}
+      name: http
+  selector:
+{{ toYaml .Values.fapp.labels | indent 4 }}

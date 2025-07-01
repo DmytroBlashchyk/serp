@@ -1,0 +1,31 @@
+export interface UpdateKeywordsUsingLiveModeForGoogleMapsResultType {
+  type: string;
+  rank_group: number;
+  rank_absolute: number;
+  domain?: string;
+  title: string;
+  url?: string;
+  contact_url: any;
+  rating: any;
+  hotel_rating: any;
+  price_level: any;
+  rating_distribution: any;
+  snippet: string;
+  address: string;
+  address_info: any;
+  place_id: string;
+  phone: string;
+  main_image: string;
+  total_photos: number;
+  category: string;
+  additional_categories: any;
+  category_ids: string[];
+  work_hours: any;
+  feature_id: string;
+  cid: string;
+  latitude: number;
+  longitude: number;
+  is_claimed: boolean;
+  local_justifications: any;
+  is_directory_item: boolean;
+}

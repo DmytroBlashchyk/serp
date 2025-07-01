@@ -1,0 +1,43 @@
+import { IdType } from 'modules/common/types/id-type.type';
+import { TariffPlansEnum } from 'modules/subscriptions/enums/tariff-plans.enum';
+import { SubscriptionStatusesEnum } from 'modules/subscriptions/enums/subscription-statuses.enum';
+
+export class BillingInfoType {
+  subscriptions_id: IdType;
+  subscriptions_created_at: Date;
+  subscriptions_updated_at: Date;
+  subscriptions_available_number_of_updates: number;
+  subscriptions_activation_date: Date;
+  subscriptions_status_update_date: Date;
+  subscriptions_subscription_id: string;
+  subscriptions_customer_id: string;
+  subscriptions_account_id: string;
+  subscriptions_tariff_plan_id: IdType;
+  subscriptions_status_id: IdType;
+  tariffPlan_id: IdType;
+  tariffPlan_name: TariffPlansEnum;
+  setting_id: IdType;
+  setting_created_at: Date;
+  setting_updated_at: Date;
+  setting_daily_word_count: number;
+  setting_monthly_word_count: number;
+  setting_price: number;
+  setting_paddle_product_id: number;
+  setting_tariff_plan_id: number;
+  status_id: IdType;
+  status_name: SubscriptionStatusesEnum;
+  transactions_id: IdType;
+  transactions_created_at: Date;
+  transactions_updated_at: Date;
+  transactions_transaction_id: string;
+  transactions_subscription_id: string;
+  transactions_status_id: IdType;
+  transactions_card_id: IdType;
+  card_id: IdType;
+  card_created_at: Date;
+  card_updated_at: Date;
+  card_type: string;
+  card_last4: number;
+  card_expiry_year: number;
+  card_expiry_month: number;
+}

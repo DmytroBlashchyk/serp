@@ -1,0 +1,25 @@
+FROM node:16 AS base
+
+WORKDIR /home/node/app
+
+COPY package*.json ./
+
+RUN npm cache clean --force
+RUN rm -rf node_modules
+RUN npm install --force
+
+COPY . .
+
+
+FROM base AS production
+
+RUN npm run build
+
+
+FROM base AS unit-tests
+
+ENV GIT_WORK_TREE=/home/node/app GIT_DIR=/home/node/.git
+
+RUN apt-get update && \
+    apt-get install git
+

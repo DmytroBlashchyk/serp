@@ -1,0 +1,68 @@
+import * as process from 'process';
+
+export const tariffPlans = [
+  {
+    name: 'Starter Package',
+    dailyWordCount: 100,
+    monthlyWordCount: 3000,
+    price: 9.99,
+    paddleProductId: process.env.STARTER_PACKAGE_ID,
+    tariffPlanId: 1,
+  },
+  {
+    name: 'Professional Package',
+    dailyWordCount: 500,
+    monthlyWordCount: 15000,
+    price: 39.99,
+    paddleProductId: process.env.PROFESSIONAL_PACKAGE_ID,
+    tariffPlanId: 2,
+  },
+  {
+    name: 'Enterprise Package',
+    dailyWordCount: 2000,
+    monthlyWordCount: 60000,
+    price: 149.99,
+    paddleProductId: process.env.ENTERPRISE_PACKAGE_ID,
+    tariffPlanId: 3,
+  },
+  {
+    name: 'Custom 1 Package',
+    dailyWordCount: 5000,
+    monthlyWordCount: 150000,
+    price: 359.99,
+    paddleProductId: process.env.CUSTOM_1_PACKAGE_ID,
+    tariffPlanId: 4,
+  },
+  {
+    name: 'Custom 2 Package',
+    dailyWordCount: 10000,
+    monthlyWordCount: 300000,
+    price: 699.99,
+    paddleProductId: process.env.CUSTOM_2_PACKAGE_ID,
+    tariffPlanId: 5,
+  },
+  {
+    name: 'Custom 3 Package',
+    dailyWordCount: 20000,
+    monthlyWordCount: 600000,
+    price: 1299.99,
+    paddleProductId: process.env.CUSTOM_3_PACKAGE_ID,
+    tariffPlanId: 6,
+  },
+  {
+    name: 'Custom 4 Package',
+    dailyWordCount: 40000,
+    monthlyWordCount: 1200000,
+    price: 2499.99,
+    paddleProductId: process.env.CUSTOM_4_PACKAGE_ID,
+    tariffPlanId: 7,
+  },
+  {
+    name: 'Custom 5 Package',
+    dailyWordCount: 50000,
+    monthlyWordCount: 1500000,
+    price: 2999.99,
+    paddleProductId: process.env.CUSTOM_4_PACKAGE_ID,
+    tariffPlanId: 8,
+  },
+];

@@ -1,0 +1,32 @@
+FROM node:16 as base
+
+WORKDIR /home/node/app
+
+COPY package*.json ./
+
+RUN npm cache clean --force
+RUN rm -rf node_modules
+RUN npm install --force
+
+COPY . .
+
+
+FROM base as production
+
+RUN npm run build
+
+
+FROM base as unit-tests
+
+ENV GIT_WORK_TREE=/home/node/app GIT_DIR=/home/node/.git
+
+EXPOSE 4002
+COPY ./infrastructure/start_fastify.sh /usr/local/bin/start
+RUN chmod u+x /usr/local/bin/start
+CMD ["/usr/local/bin/start"]
+
+
+
+RUN apt-get update && \
+    apt-get install git
+

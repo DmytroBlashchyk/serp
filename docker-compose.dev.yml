@@ -1,0 +1,155 @@
+version: '3.7'
+
+services:
+  webserver:
+    image: nginx:latest
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - webnet
+    volumes:
+      - ./nginx/conf/:/etc/nginx/conf.d/:ro
+      - ./certbot/www:/var/www/certbot/:ro
+      - ./certbot/conf/:/etc/nginx/ssl/:ro
+    depends_on:
+      - serpnest_app
+  certbot:
+    image: certbot/certbot:latest
+    volumes:
+      - ./certbot/www/:/var/www/certbot/:rw
+      - ./certbot/conf/:/etc/letsencrypt/:rw
+  serpnest_redis:
+    image: redis:6.2.6
+    container_name: serpnest_redis
+    networks:
+      - webnet
+    volumes:
+      - redisdata:/var/lib/redis/data
+    command: --port '${REDIS_PORT}'
+    expose:
+      - '${REDIS_PORT}'
+    ports:
+      - '${REDIS_PORT}:${REDIS_PORT}'
+  serpnest_db_master:
+    image: 'bitnami/postgresql:16.4.0'
+    container_name: serpnest_db_master
+    networks:
+      - webnet
+    ports:
+      - '${DB_PORT_MASTER}:${DB_PORT}'
+    volumes:
+      - 'postgresql_master_data:/bitnami/postgresql'
+    environment:
+      - POSTGRESQL_REPLICATION_MODE=master
+      - POSTGRESQL_REPLICATION_USER=repl_user
+      - POSTGRESQL_REPLICATION_PASSWORD=repl_password
+      - POSTGRESQL_USERNAME=${DB_USER}
+      - POSTGRESQL_PASSWORD=${DB_PASSWORD}
+      - POSTGRESQL_DATABASE=${DB_NAME}
+  serpnest_db_slave:
+    image: 'bitnami/postgresql:16.4.0'
+    container_name: postgresql_slave
+    networks:
+      - webnet
+    ports:
+      - '${DB_PORT_SLAVE}:${DB_PORT}'
+    depends_on:
+      - serpnest_db_master
+    environment:
+      - POSTGRESQL_REPLICATION_MODE=slave
+      - POSTGRESQL_REPLICATION_USER=repl_user
+      - POSTGRESQL_REPLICATION_PASSWORD=repl_password
+      - POSTGRESQL_MASTER_HOST=serpnest_db_master
+      - POSTGRESQL_PASSWORD=${DB_PASSWORD}
+      - POSTGRESQL_MASTER_PORT_NUMBER=${DB_PORT}
+  serpnest_app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      target: base
+    container_name: serpnest_app
+    ports:
+      - '${APP_PORT}:${APP_PORT}'
+    networks:
+      - webnet
+    environment:
+      DB_HOST: serpnest_db_master
+      REDIS_HOST: serpnest_redis
+    volumes:
+      - ./src:/home/node/app/src
+    depends_on:
+      - serpnest_db_master
+      - serpnest_db_slave
+      - serpnest_redis
+    env_file:
+      - .env
+    command: bash -c "npm run db:init && npm run start:dev"
+  serpnest_fastify_app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      target: base
+    container_name: serpnest_fastify_app
+    ports:
+      - '${FASTIFY_PORT}:${FASTIFY_PORT}'
+    networks:
+      - webnet
+    environment:
+      DB_HOST: serpnest_db_master
+      REDIS_HOST: serpnest_redis
+    volumes:
+      - ./src:/home/node/app/src
+    depends_on:
+      - serpnest_db_master
+      - serpnest_db_slave
+      - serpnest_redis
+    env_file:
+      - .env
+    command: bash -c "npm run fastify:dev"
+  serpnest_queue:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      target: base
+    container_name: serpnest_queue
+    ports:
+      - '${QUEUE_PORT}:${QUEUE_PORT}'
+    networks:
+      - webnet
+    environment:
+      DB_HOST: serpnest_db_master
+      REDIS_HOST: serpnest_redis
+    volumes:
+      - ./src:/home/node/app/src
+    depends_on:
+      - serpnest_app
+      - serpnest_db_master
+      - serpnest_db_slave
+      - serpnest_redis
+      - serpnest_fastify_app
+    env_file:
+      - .env
+    command: bash -c "npm run queue:dev"
+  serpnest_db_test:
+    image: 'bitnami/postgresql:16.4.0'
+    container_name: serpnest_db_test
+    networks:
+      - webnet
+    ports:
+      - '${DB_PORT_TEST}:${DB_PORT}'
+    volumes:
+      - 'postgresql_test_data:/bitnami/postgresql'
+    environment:
+      - POSTGRESQL_USERNAME=${DB_USER}
+      - POSTGRESQL_PASSWORD=${DB_PASSWORD}
+      - POSTGRESQL_DATABASE=test_db
+
+networks:
+  webnet:
+    driver: bridge
+
+volumes:
+  redisdata:
+  postgresql_master_data:
+  postgresql_test_data:

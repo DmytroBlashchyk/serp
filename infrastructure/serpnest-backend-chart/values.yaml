@@ -1,0 +1,165 @@
+##########################################
+#                 Common                  #
+##########################################
+common:
+  env: {}
+
+
+##########################################
+#                   App                  #
+##########################################
+app:
+  image: {}
+
+  replicaCount: 1
+
+  labels: {}
+
+  podAnnotations: {}
+
+  container:
+    port: 4000
+    protocol: TCP
+
+  autoscaling: {}
+
+  updateStrategy: {}
+
+  env: {}
+
+  ingress:
+    annotations: {}
+
+    ingressClassName: ""
+
+    path: ""
+    host: ""
+
+  service:
+    type: NodePort
+    port: 80
+    protocol: TCP
+    targetPort: 4000
+
+  # This is too check if the application is ready to servce traffic
+  # https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/
+  # https://cloud.google.com/blog/products/gcp/kubernetes-best-practices-setting-up-health-checks-with-readiness-and-liveness-probes
+  readinessProbe: {}
+
+  # This is the application health check, if it becomes unhealthy, kubernetes will attempt to spin a new container up.
+  # https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/
+  # https://cloud.google.com/blog/products/gcp/kubernetes-best-practices-setting-up-health-checks-with-readiness-and-liveness-probes
+  livenessProbe: {}
+
+  # Resource limits and Requests for the container.
+  # These values are sensitive and we adivse that you start with minimal values .
+  resources: {}
+
+  nodeSelector: {}
+
+  tolerations: []
+
+  affinity: {}
+
+##########################################
+#                 Queue                  #
+##########################################
+queue:
+  image: {}
+
+  replicaCount: 1
+
+  labels: {}
+
+  podAnnotations: {}
+
+  container:
+    port: 9000
+    protocol: TCP
+
+  autoscaling: {}
+
+  updateStrategy: {}
+
+  env: {}
+
+  service: {}
+
+  # This is too check if the application is ready to servce traffic
+  # https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/
+  # https://cloud.google.com/blog/products/gcp/kubernetes-best-practices-setting-up-health-checks-with-readiness-and-liveness-probes
+  readinessProbe: {}
+
+  # This is the application health check, if it becomes unhealthy, kubernetes will attempt to spin a new container up.
+  # https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/
+  # https://cloud.google.com/blog/products/gcp/kubernetes-best-practices-setting-up-health-checks-with-readiness-and-liveness-probes
+  livenessProbe: {}
+
+  # Resource limits and Requests for the container.
+  # These values are sensitive and we adivse that you start with minimal values .
+  resources: {}
+
+  nodeSelector: {}
+
+  tolerations: []
+
+  affinity: {}
+##########################################
+#             Fastify  App                  #
+##########################################
+fapp:
+  image: {}
+
+  replicaCount: 1
+
+  labels: {}
+
+  podAnnotations: {}
+
+  container:
+    port: 4002
+    protocol: TCP
+
+  autoscaling: {}
+
+  updateStrategy: {}
+
+  env: {}
+
+  ingress:
+    annotations: {}
+
+    ingressClassName: ""
+
+    path: ""
+    host: ""
+
+  service:
+    type: NodePort
+    port: 80
+    protocol: TCP
+    targetPort: 4002
+
+  # This is too check if the application is ready to servce traffic
+  # https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/
+  # https://cloud.google.com/blog/products/gcp/kubernetes-best-practices-setting-up-health-checks-with-readiness-and-liveness-probes
+  readinessProbe: {}
+
+  # This is the application health check, if it becomes unhealthy, kubernetes will attempt to spin a new container up.
+  # https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/
+  # https://cloud.google.com/blog/products/gcp/kubernetes-best-practices-setting-up-health-checks-with-readiness-and-liveness-probes
+  livenessProbe: {}
+
+  # Resource limits and Requests for the container.
+  # These values are sensitive and we adivse that you start with minimal values .
+  resources: {}
+
+  nodeSelector: {}
+
+  tolerations: []
+
+  affinity: {}
+
+
+
+

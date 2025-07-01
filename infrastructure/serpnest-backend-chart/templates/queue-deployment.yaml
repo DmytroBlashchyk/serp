@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "{{ include "chart.fullname" . }}-queue"
+  labels:
+{{ toYaml .Values.queue.labels | indent 4 }}
+spec:
+  replicas: {{ .Values.queue.autoscaling.desiredReplicaCount }}
+  strategy:
+{{ toYaml .Values.queue.updateStrategy | indent 4 }}
+  selector:
+    matchLabels:
+{{ toYaml .Values.queue.labels | indent 6 }}
+  template:
+    metadata:
+      annotations:
+{{ toYaml .Values.queue.podAnnotations | indent 8 }}
+      labels:
+{{ toYaml .Values.queue.labels | indent 8 }}
+    spec:
+      topologySpreadConstraints:
+      - maxSkew: 1
+        topologyKey: topology.kubernetes.io/zone
+        whenUnsatisfiable: ScheduleAnyway
+        labelSelector:
+          matchLabels:
+{{ toYaml .Values.queue.labels | indent 12 }}
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.queue.image.repository }}:{{ .Values.queue.image.tag }}"
+          imagePullPolicy: {{ .Values.queue.image.pullPolicy }}
+          env:
+{{- if .Values.queue.env }}
+{{ toYaml .Values.queue.env | indent 12 }}
+{{- end }}
+{{- if .Values.common.env }}
+{{ toYaml .Values.common.env | indent 12 }}
+{{- end }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.queue.container.port }}
+              protocol: {{ .Values.queue.container.protocol }}
+          readinessProbe:
+{{ toYaml .Values.queue.readinessProbe | indent 12 }}
+          livenessProbe:
+{{ toYaml .Values.queue.livenessProbe | indent 12 }}
+          resources:
+            {{- toYaml .Values.queue.resources | nindent 12 }}
+      {{- with .Values.queue.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+    {{- with .Values.queue.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+    {{- with .Values.queue.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}

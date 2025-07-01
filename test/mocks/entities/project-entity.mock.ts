@@ -1,0 +1,58 @@
+import { ProjectEntity } from 'modules/projects/entities/project.entity';
+
+export const projectOneEntityMock = {
+  account: undefined,
+  checkFrequency: undefined,
+  createdAt: undefined,
+  creator: undefined,
+  emailReports: [],
+  folders: [],
+  keywords: [],
+  id: 1,
+  language: undefined,
+  lastProjectOverview: undefined,
+  projectName: 'Test Project 1',
+  searchEngine: undefined,
+  sharedLinks: [],
+  triggers: [],
+  updatedAt: undefined,
+  users: [],
+} as ProjectEntity;
+
+export const projectTwoEntityMock = {
+  account: undefined,
+  checkFrequency: undefined,
+  createdAt: undefined,
+  creator: undefined,
+  emailReports: [],
+  folders: [],
+  keywords: [],
+  id: 2,
+  language: undefined,
+  lastProjectOverview: undefined,
+  projectName: 'Test Project 2',
+  searchEngine: undefined,
+  sharedLinks: [],
+  triggers: [],
+  updatedAt: undefined,
+  users: [],
+} as ProjectEntity;
+
+export const projectThreeEntityMock = {
+  account: undefined,
+  checkFrequency: undefined,
+  createdAt: undefined,
+  creator: undefined,
+  emailReports: [],
+  folders: [],
+  keywords: [],
+  id: 3,
+  language: undefined,
+  lastProjectOverview: undefined,
+  projectName: 'Test Project 3',
+  searchEngine: undefined,
+  sharedLinks: [],
+  triggers: [],
+  updatedAt: undefined,
+  users: [],
+} as ProjectEntity;

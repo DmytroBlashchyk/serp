@@ -1,0 +1,57 @@
+export const dataForGoogleLocalSearchEngine = {
+  id: '10041456-7049-0139-0000-6b6d65c9a982',
+  status_code: 20000,
+  status_message: 'Ok.',
+  time: '11.0341 sec.',
+  cost: 0.01,
+  result_count: 1,
+  path: ['v3', 'serp', 'google', 'local_finder', 'live', 'advanced'],
+  data: {
+    api: 'serp',
+    function: 'live',
+    se: 'google',
+    se_type: 'local_finder',
+    keyword: 'starbucks loyalty rewards',
+    location_code: 2840,
+    language_code: 'en',
+    device: 'desktop',
+    os: 'windows',
+    depth: 100,
+  },
+  result: [
+    {
+      keyword: 'starbucks loyalty rewards',
+      type: 'local_finder',
+      se_domain: 'google.com',
+      location_code: 2840,
+      language_code: 'en',
+      check_url:
+        'https://www.google.com/search?q=starbucks+loyalty+rewards&oq=starbucks+loyalty+rewards&hl=en&gl=US&tbm=lcl&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc',
+      datetime: '2024-10-04 11:56:17 +00:00',
+      spell: null,
+      item_types: ['local_pack'],
+      se_results_count: 0,
+      items_count: 1,
+      items: [
+        {
+          type: 'local_pack',
+          rank_group: 1,
+          rank_absolute: 1,
+          position: 'right',
+          xpath:
+            '/html[1]/body[1]/div[2]/div[1]/div[8]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]',
+          title: 'Starbucks',
+          description:
+            'Winchester, CA · (951) 357-0236 \nOpen ⋅ Closes 10:30 PM \nDine-in · Drive-through \n',
+          domain: 'starbucks.com',
+          phone: '(951) 357-0236',
+          url: 'http://starbucks.com/rewards',
+          is_paid: false,
+          rating: null,
+          cid: '3329836399314503723',
+          rectangle: null,
+        },
+      ],
+    },
+  ],
+} as any;

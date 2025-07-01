@@ -1,0 +1,57 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "watchAssets": true,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "modules/*": ["src/modules/*"]
+    }
+  },
+  "projects": {
+    "serpnest-api": {
+      "type": "application",
+      "root": "src",
+      "entryFile": "main",
+      "sourceRoot": "src",
+      "compilerOptions": {
+        "tsConfigPath": "tsconfig.json",
+        "baseUrl": ".",
+        "paths": {
+          "modules/*": ["src/modules/*"]
+        }
+      }
+    },
+    "serpnest-fastify-api": {
+      "type": "application",
+      "root": "src",
+      "entryFile": "fastify-entrypoint",
+      "sourceRoot": "src",
+      "compilerOptions": {
+        "tsConfigPath": "tsconfig.json",
+        "baseUrl": ".",
+        "paths": {
+          "modules/*": ["src/modules/*"]
+        }
+      }
+    },
+    "serpnest-queue": {
+      "type": "application",
+      "root": "src",
+      "entryFile": "queue-entrypoint",
+      "sourceRoot": "src",
+      "compilerOptions": {
+        "tsConfigPath": "queue.tsconfig.json",
+        "baseUrl": ".",
+        "paths": {
+          "modules/*": ["src/modules/*"]
+        },
+        "assets": [{
+          "include": "**/*.hbs",
+          "outDir": "dist-queue/src",
+          "watchAssets": true
+        }]
+      }
+    }
+  }
+}
